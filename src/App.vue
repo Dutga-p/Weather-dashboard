@@ -5,7 +5,7 @@ import SearchBar from "./components/SearchBar.vue";
 import WeatherCard from "./components/WeatherCard.vue";
 import RecentSearches from "./components/RecentSearches.vue";
 
-const API_KEY = "TU_API_KEY_AQUI"; // Reemplaza con tu API key
+const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 const darkMode = ref(false);
 const weatherData = ref(null);
 const recentCities = ref([]);
